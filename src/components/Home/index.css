@@ -1,0 +1,68 @@
+/* Write your CSS code here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.heading-container {
+  padding: 10px;
+}
+.heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 50px;
+  width: 500px;
+}
+.description {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.shopNow-button {
+  color: #ffffff;
+  font-family: 'Roboto';
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0b69ff;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 40px;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .home-image1 {
+    width: 350px;
+    height: 350px;
+  }
+  .home-image {
+    display: none;
+  }
+  .heading-container {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .home-image1 {
+    display: none;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+}
